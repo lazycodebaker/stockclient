@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+      font-family: 'TWR';
+      src: url('./fonts/TWR.otf') format('opentype');
+}
+
+* {
+      font-family: 'TW';
+}
+
+body {
+      overflow: hidden;
+}
