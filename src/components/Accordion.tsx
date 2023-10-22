@@ -54,7 +54,7 @@ const Accordion: React.FC<AccordionProps> = ({ stock }) => {
           onClick={() => setIsOpen(!isOpen)}
         >
           <span className='font-semibold'>
-            {name} - ${price.toPrecision(2)}
+            {name} - ${ !isOpen ? price.toPrecision(2) : chartData[chartData.length - 1]?.price?.toFixed(2)}
           </span>
           <div className={`flex items-center justify-center`}>
             {
